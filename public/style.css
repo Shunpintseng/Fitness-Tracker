@@ -1,67 +1,196 @@
-<style media="screen">
 body {
-    text-align: center;
-    background-color: cornflowerblue;
+    background-color : #d7fce2;  
 }
 
-.primary {
-    color: #64edbd;
+.logo {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(32, 27, 27);   
+   font-size: 50px;
+}
+.newEx{
+    font-family: 'Padauk', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
 }
 
-h1 {
-    font-size: 40px;
-    color: white;
+.timeNow{
+    color:darkslategrey;
+    letter-spacing: 0.5px;
+    
 }
 
-h2,
-h4 {
-    color: white;
+
+/* .resistenceContainer{
+    margin-left: 180px;
 }
 
-.delete {
-    margin-left: 20px;
-    color: red;
-    cursor: pointer;
-    text-align: right;
-}
+.cardioContainer{
+    margin-left: 180px;
+}  */
 
-input {
-    width: 400px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 42px;
-    background-color: antiquewhite;
-}
 
-textarea {
-    width: 400px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 24px;
-    background-color: antiquewhite;
-}
+.btnAdd {
 
-.data-title {
-    cursor: pointer;
-    font-size: 24px;
-}
-
-#results {
-    width: 400px;
-    height: 200px;
-    overflow: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: antiquewhite;
-}
-
-#action-button {
     display: inline-block;
+    border-radius: 3%;
+    width: 100px;
+    height: 40px;     
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.616);
+    transition: .6s;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    margin-top: 5px;    
+    background-color: #6e6a6a;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;        
+    color: whitesmoke;
+ 
 }
 
-#buttons {
-    margin: 20px;
+.small{
+    color: silver;
 }
-</style>
+
+.recentBtn {
+    
+
+    border-radius: 3%;
+    width: 100px;       
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(33, 70, 82);      
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 1rem;      
+    margin-right: 5px;    
+    border: 2px gray ;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px rgba(78, 77, 77, 0.616);
+}
+
+
+.addNew{
+    color: white;
+}
+
+
+input{
+    list-style: none;
+    text-decoration: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.616);
+   
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+
+
+.closeIcon {
+    font-size: 25px;
+    color: silver;
+}
+.succesModal{
+    font-size: 25px;
+    margin-left:auto; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
+    
+}
+
+
+
+.recentTitle{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: black;
+    margin-top: 0 auto;   
+
+}
+.hide {
+    display: none;
+}
+
+.centerDiv{
+  align-content: center;
+}
+
+
+
+#resistanceComplete , #cardioComplete{
+    background-color:  #222928; 
+
+    color: white;
+    letter-spacing: 0.5;
+    font-weight: bolder;
+    align-content: center !important;
+    border: none;
+    letter-spacing: 1px;
+}
+
+#cardioUpdate, #updateResistance {
+
+    background-color:  rgb(94, 146, 194);   
+
+    color: white;
+    letter-spacing: 0.5;
+    font-weight: bolder;
+    align-content: center !important;
+    border: none;
+  
+}
+
+.cardioContainer{
+ color:gray
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    .resistenceContainer{
+        margin: 0;
+     }
+     
+     .cardioContainer{
+        margin: 0;
+     }
+     
+     form {
+        width: 100%;
+        margin-left: auto;
+      }
+
+ }
+
+
+@media screen and (max-width: 576px) { 
+
+    .resistenceContainer{
+       margin: auto;
+    }
+    
+    .cardioContainer{
+       margin: auto;
+    }
+    
+    
+form {
+    width: 100%;
+    margin-left: auto;
+  }
+.logo{
+    font-size: 40px;
+}
+.divRecents{
+    display: none;
+}
+  
+.btnAdd{
+    margin-top: 5px;
+}
+}

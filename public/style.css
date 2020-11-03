@@ -4,6 +4,7 @@ body {
 
 .logo {
     font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: bolder;
     letter-spacing: 1px;
     color: rgb(32, 27, 27);   
    font-size: 50px;
@@ -31,13 +32,14 @@ body {
 } 
 
 .exerciseList {
-    border-radius: 10%;
+    border-radius: 2rem;
+    border: rgba(0, 0, 0, 0.616) solid;
     background-color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     margin-top: 5%;
     padding-top: 5%;
-    
+
 }
 
 .btnAdd {

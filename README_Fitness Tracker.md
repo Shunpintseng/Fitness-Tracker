@@ -20,6 +20,15 @@ Questions
 ## Description
     
     This is an app for workout exercises tracking. User can input their workouts (cardio & weight training) in this app to keep track of their fitness progress.
+    https://still-sea-24451.herokuapp.com/
+    https://github.com/Shunpintseng/Fitness-Tracker
+
+    ![Index view with weights workout input] (public\Images\index-weights.JPG)
+
+    ![Index view with cardio workout input] (public\Images\index-cardio.JPG)
+
+
+
     
 ## Installation
     

@@ -22,14 +22,23 @@ body {
 }
 
 
-/* .resistenceContainer{
+.resistenceContainer{
     margin-left: 180px;
 }
 
 .cardioContainer{
     margin-left: 180px;
-}  */
+} 
 
+.exerciseList {
+    border-radius: 10%;
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    padding-top: 5%;
+    
+}
 
 .btnAdd {
 
@@ -39,9 +48,7 @@ body {
     height: 40px;     
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.616);
     transition: .6s;
-    /* text-align: center; */
-    /* vertical-align: middle; */
-    margin-top: 5px;    
+    margin-top: 10px;    
     background-color: #6e6a6a;    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;        

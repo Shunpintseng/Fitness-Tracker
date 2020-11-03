@@ -1,4 +1,4 @@
-//variables set up for cardio and resistence separately
+//variables set up for cardio and resistence
 const resistanceDiv = $(".resistenceContainer");
 const cardioDiv = $(".cardioContainer");
 const $btnCardio = $(".btnCardio");
@@ -95,16 +95,21 @@ $(document).ready(function() {
   })
     .then(data => {
       data.forEach(element => {
-        console.log(element.exName);
-        console.log(element.distance);
-        console.log(element.duration);
-        console.log(element._id);
-        var pNew = $("<button>");
-        pNew.addClass("recentBtn ");
+        
+
+        var pNew = $("<p>");
+        pNew.addClass("exerciseList");
         pNew.attr("data-id");
 
-        var recentWorkout = element.exName;
-        pNew.prepend(recentWorkout);
+
+
+        for(var i in element){
+          if(i === "_id" || i === "created" || i === "__v"){
+            continue;
+          }
+          pNew.append(i+":"+element[i]+"<p>" );
+        }
+        pNew.append("<br>" );
         $(".allWorkouts").append(pNew);
         return;
       });
@@ -112,15 +117,6 @@ $(document).ready(function() {
     .then();
 });
 
-$(".allWorkouts").on("click", function() {
-  $.ajax({
-    url: "/api/workouts/",
-    type: "GET"
-  }).then(function(res) {
-    // Reload the page to get the updated list
-    console.log(res);
-  });
-});
 
 //set up the heigh of modal when it's showing
 $("#myModal").on("show.bs.modal", function() {
